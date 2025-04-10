@@ -3,7 +3,7 @@ import ChatInterface from './components/ChatInterface';
 
 function App() {
   return (
-    <div className="min-h-screen bg-pink-100 py-8">
+    <div className="min-h-screen py-8 invert bg-gray-700" >
       <ChatInterface />
     </div>
   );
