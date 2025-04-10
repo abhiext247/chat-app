@@ -3,7 +3,7 @@ import google.generativeai as genai
 from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
 
-# Load environment variables
+
 load_dotenv()
 
 
@@ -22,7 +22,6 @@ class GeminiService:
     def generate_response(self, messages: List[Dict[str, Any]]) -> Dict[str, Any]:
         """Generate a response from Gemini based on the chat history."""
         try:
-            # Convert our message format to Gemini's expected format
             gemini_messages = []
 
             msg = messages
@@ -80,7 +79,7 @@ class GeminiService:
         """
         # Simple detection of "read file" commands
         if "read file" in text.lower() or "read the file" in text.lower():
-            # Extract the filename - looking for text between quotes or after "file"
+            # Extract the filename
             import re
 
             # Try to find filename in quotes
