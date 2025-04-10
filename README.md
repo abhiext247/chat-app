@@ -5,7 +5,6 @@ A modern, reactive chat application that uses Google's Gemini AI API to provide 
 ## Features
 
 - Real-time chat interface with AI responses powered by Google's Gemini model  
-- Tool calling functionality to read local files when requested  
 - Modern UI with Tailwind CSS styling  
 - Responsive design that works on desktop and mobile  
 - FastAPI backend for efficient handling of requests  
