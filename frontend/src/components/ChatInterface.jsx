@@ -93,7 +93,7 @@ const ChatInterface = () => {
       </div>
       
       <div className="text-md text-blue-100 text-center">
-        <p>Try asking: "Read file test.txt"</p>
+        <p>Start Conversation</p>
       </div>
     </div>
   );
