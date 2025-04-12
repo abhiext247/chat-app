@@ -1,6 +1,6 @@
 # AI Chat App with Gemini Integration
 
-A modern, reactive chat application that uses Google's Gemini AI API to provide intelligent responses. The app features a clean UI built with React and Tailwind CSS, with a FastAPI backend that integrates with the Gemini API and includes tool functionality for reading files.
+A modern, reactive chat application that uses Google's Gemini AI API to provide intelligent responses. The app features a clean UI built with React and Tailwind CSS, with a FastAPI backend that integrates with the Gemini API.
 
 ## Features
 
