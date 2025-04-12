@@ -12,7 +12,9 @@ app = FastAPI(title="Chat App Backend")
 # Configure CORS to allow requests from frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite's default port
+    allow_origins=[
+    "http://localhost:5173",  # for local dev
+    "https://chat-app-frontend-kyed.onrender.com"],  # Vite's default port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
