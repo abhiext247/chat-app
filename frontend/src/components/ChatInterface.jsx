@@ -29,7 +29,7 @@ const ChatInterface = () => {
     
     try {
       // Send message to backend
-      const response = await fetch('http://localhost:8000/api/chat', {
+      const response = await fetch('https://chat-app-backend-fm5n.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

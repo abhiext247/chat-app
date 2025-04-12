@@ -22,9 +22,6 @@ app.add_middleware(
 gemini_service = GeminiService()
 tool_service = ToolService()
 
-# Sample test.txt file
-with open("test.txt", "w") as f:
-    f.write("This is a test file.\nIt contains some sample text for demonstration purposes.")
 
 @app.get("/")
 async def root():
@@ -78,13 +75,3 @@ async def chat(request: ChatRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/api/tool", response_model=ToolCallResponse)
-async def tool_call(request: ToolCallRequest):
-    try:
-        result = tool_service.process_tool_call(request.name, request.arguments)
-        return ToolCallResponse(result=result)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
